@@ -1,0 +1,26 @@
+[
+    {
+      "id": "64443348d38397d71d8fa843",
+      "title": "Account & Finance",
+      "logo": "/public/Icons/accounts 1.png",
+      "availability": 300
+    },
+    {
+      "id": "644433480765e41c749718f2",
+      "title": "Creative Design",
+      "logo": "/public/Icons/business 1.png",
+      "availability": 100
+    },
+    {
+      "id": "64443348264dbe5d50a8c871",
+      "title": "Marketing & Sales",
+      "logo": "/public/Icons/social-media 1.png",
+      "availability": 150
+    },
+    {
+      "id": "6444334871fdad50787cfb51",
+      "title": "Engineering Job",
+      "logo": "/public/Icons/chip 1.png",
+      "availability": 220
+    }
+  ]

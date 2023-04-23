@@ -1,10 +1,15 @@
 import './App.css'
+import Category from './Components/Category/Category'
+import FeaturedJobs from './Components/FeaturedJobs/FeaturedJobs'
+import Header from './Components/Header/Header'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-7xl text-red-900'>hello vite</h1>
+      <Header></Header>
+      <Category></Category>
+      <FeaturedJobs></FeaturedJobs>
     </>
   )
 }
