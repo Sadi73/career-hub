@@ -13,6 +13,23 @@ const Details = () => {
     const findJob = data.find(item => item.id === jobId);
     // console.log(findJob);
 
+    const saveToLocalStorage = (jobID) => {
+        console.log(jobID);
+        let cart = {};
+        const saved = localStorage.getItem('cart');
+        if(saved){
+            cart = JSON.parse(saved);
+            cart[jobID] = 'applied';
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+        else{
+            cart[jobID] = 'applied';
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+        }
+
+    }
+
     return (
         <div>
             <div className='bg-gray-100 p-10'>
@@ -42,7 +59,7 @@ const Details = () => {
                         <p> <span className='font-bold'>Email:</span> info@hotmail.com</p>
                         <p> <span className='font-bold'>Address</span> Dhaka Bangladesh</p>
                     </div>
-                    <button className='bg-sky-300 w-full p-3 mt-2 text-white hover:bg-sky-500 rounded-md'>Apply Now</button>
+                    <button className='bg-sky-500 w-full p-3 mt-3 text-white hover:bg-sky-900 rounded-md' onClick={()=>saveToLocalStorage(findJob.id)}>Apply Now</button>
                 </div>
             </div>
 
