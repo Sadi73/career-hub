@@ -6,12 +6,18 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from './App';
+import Details from './Components/Details/Details';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>
   },
+  {
+    path: "/details/:jobID",
+    element: <Details></Details>,
+    loader: () => fetch("/public/FeatureJobs.json")
+  }
   
 
 ]);

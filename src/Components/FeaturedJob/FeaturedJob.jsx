@@ -1,8 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faCircleDollarToSlot,faLocationDot} from '@fortawesome/free-solid-svg-icons'
+import { faCircleDollarToSlot, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
-const FeaturedJob = ({ featuredJob, handleViewDetails }) => {
+const FeaturedJob = ({ featuredJob }) => {
     // console.log(featuredJob);
     const { id, logo, title, company, type, salary, location } = featuredJob;
     // console.log(type)
@@ -20,7 +21,9 @@ const FeaturedJob = ({ featuredJob, handleViewDetails }) => {
                 <p><FontAwesomeIcon icon={faLocationDot} />     {location}</p>
                 <p><FontAwesomeIcon icon={faCircleDollarToSlot} />    Salary: {salary}</p>
             </div>
-            <button className='bg-sky-500 p-3 rounded-md text-white hover:bg-sky-900 absolute bottom-0 mb-5' onClick={() => handleViewDetails(id)}>View Details</button>
+            <Link to={`/details/${id}`}>
+                <button className='bg-sky-500 p-3 rounded-md text-white hover:bg-sky-900 absolute bottom-0 mb-5'>View Details</button>
+            </Link>
 
         </div>
     );
