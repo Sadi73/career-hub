@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
-import ShowDetails from '../ShowDetails/ShowDetails';
 
 const Details = () => {
     const data = useLoaderData();
