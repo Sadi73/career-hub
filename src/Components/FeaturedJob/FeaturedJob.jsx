@@ -13,7 +13,7 @@ const FeaturedJob = ({ featuredJob, handleViewDetails }) => {
             <p>{company}</p>
             <div className='flex '>
                 {
-                    type.map(x => <p className='border-solid border-2 border-gray-400 rounded-md p-3 mr-3' >{x}</p>)
+                    type.map(x => <p key={x} className='border-solid border-2 border-gray-400 rounded-md p-3 mr-3' >{x}</p>)
                 }
             </div>
             <div className='flex justify-between'>
