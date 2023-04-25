@@ -9,6 +9,7 @@ import App from './App';
 import Details from './Components/Details/Details';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Statistics from './Components/Statistics/Statistics';
+import Blog from './Components/Blog/Blog';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/statistics",
     element: <Statistics></Statistics>
+  },
+  {
+    path: "/blog",
+    element: <Blog></Blog>
   }
   
 
