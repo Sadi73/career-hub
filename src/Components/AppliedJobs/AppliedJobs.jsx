@@ -18,7 +18,7 @@ const AppliedJobs = () => {
         <div>
             <div className='bg-gray-100 py-16'>
                 <NavBar></NavBar>
-                <h1 className='text-5xl font-medium text-center mt-32'>Applied Jobs: </h1>
+                <h1 className='text-5xl font-medium text-center mt-32'>Applied Jobs </h1>
             </div>
             <div className='mt-32 w-3/4 mx-auto'>
                 {

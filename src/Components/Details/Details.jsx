@@ -36,7 +36,7 @@ const Details = () => {
                 <h1 className='text-5xl text-center mt-32'>Job Details</h1>
             </div>
 
-            <div className='w-3/4 mx-auto flex justify-between mt-32'>
+            <div className='w-3/4 mb-32 mx-auto flex justify-between mt-32'>
                 <div className='' style={{ width: '880px' }}>
                     <p> <span className='text-xl font-bold'> Description:</span> {findJob.description}</p>
                     <p> <span className='text-xl font-bold'> Responsibility:</span> {findJob.responsibility}</p>
